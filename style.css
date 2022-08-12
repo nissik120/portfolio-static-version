@@ -41,29 +41,29 @@ main{
 }
 
 h1{
-    font-size: clamp(3rem, 2vw, 3.6rem);
+    font-size: clamp(3.4rem, 4vw, 4.2rem);
     color: var(--color-accent);
 }
 
 h2{
-    font-size: clamp(1.6rem, 2vw, 2rem);
+    font-size: clamp(1.6rem, 3vw, 2rem);
     color: var(--color-accent);
     padding-bottom: 2rem;    
 }
 
 h3{
-    font-size: clamp(1.4rem, 2vw, 1.8rem);
+    font-size: clamp(1.4rem, 3vw, 1.8rem);
     color: var(--color-accent);
     padding-bottom: 2rem;
 }
 
 h4, i{
-    font-size: clamp(1.2rem, 2vw, 1.6rem);
+    font-size: clamp(1.2rem, 3vw, 1.6rem);
     font-family: var(--ft-sub);
 }
 
 p{
-    font-size: clamp(1.2rem, 2vw, 1.6rem);
+    font-size: clamp(1.2rem, 3vw, 1.6rem);
 }
 
 /*
@@ -103,6 +103,8 @@ FOOTER
     display: flex;
     align-items: center;
     justify-content: center;
+    position: sticky;
+    bottom: 0;
 }
 
 /*
@@ -148,7 +150,7 @@ CONTENT
 }
 
 #root .tag{
-    font-size: clamp(1rem, 2vw, 1.2rem);
+    font-size: clamp(1.2rem, 2vw, 1.6rem);
     overflow: hidden; /* Ensures the content is not revealed until the animation */
     border-right: .15em solid var(--color-primary); /* The typwriter cursor */
     white-space: wrap; /* Keeps the content on a single line */
