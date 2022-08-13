@@ -5,12 +5,83 @@
 
     --ft-main: Roboto Mono;
     --ft-sub: Roboto;
+    --color-background: #212922;
+    --color-primary: #E54B4B;
+    --color-accent: #44BBA4;
+    --color-txt1: #F3F9D2;
+    --color-txt2: #F3F9D2;
+
+}
+
+@media (prefers-color-scheme: light) {
+    :root{
+
+        --ft-main: Roboto Mono;
+        --ft-sub: Roboto;
+        --color-background: #F3F9D2;
+        --color-primary: #E54B4B;
+        --color-accent: #44BBA4;
+        --color-txt1: #212922;
+        --color-txt2: #212922;
+    
+    }
+}
+
+
+/* :root{
+
+    --ft-main: Roboto Mono;
+    --ft-sub: Roboto;
     --color-background: #393E41;
     --color-primary: #E7BB41;
     --color-accent: #44BBA4;
     --color-txt1: #D3D0CB;
     --color-txt2: #E7E5DF;
-}
+} */
+
+/* :root{
+
+    --ft-main: Roboto Mono;
+    --ft-sub: Roboto;
+    --color-background: #031926;
+    --color-primary: #468189;
+    --color-accent: #77ACA2;
+    --color-txt1: #F4E9CD;
+    --color-txt2: #9DBEBB;
+} */
+
+/* :root{
+
+    --ft-main: Roboto Mono;
+    --ft-sub: Roboto;
+    --color-background: #353531;
+    --color-primary: #468189;
+    --color-accent: #77ACA2;
+    --color-txt1: #F4E9CD;
+    --color-txt2: #9DBEBB;
+} */
+
+/* :root{
+
+    --ft-main: Roboto Mono;
+    --ft-sub: Roboto;
+    --color-background: #353531;
+    --color-primary: #EC4E20;
+    --color-accent: #FF9505;
+    --color-txt1: #F4E9CD;
+    --color-txt2: #000000;
+} */
+
+/* :root{
+
+    --ft-main: Roboto Mono;
+    --ft-sub: Roboto;
+    --color-background: #212922;
+    --color-primary: #EC4E20;
+    --color-accent: #007EA7;
+    --color-txt1: #F4E9CD;
+    --color-txt2: #000000;
+} */
 
 *{
     font-size: 10px;
@@ -53,7 +124,7 @@ h2{
 
 h3{
     font-size: clamp(1.4rem, 4vw, 1.8rem);
-    color: var(--color-accent);
+    color: var(--color-txt1);
     padding-bottom: 2rem;
 }
 
@@ -75,7 +146,7 @@ span, span a{
 */
 .header{
     padding: 2rem;
-    border-bottom: 0.1rem solid gray;
+    border-bottom: 0.1rem solid #555;
     display: flex;
     gap: 2rem;
     justify-content: flex-end;
@@ -103,12 +174,13 @@ span, span a{
 FOOTER
 */
 .footer{
-    border-top: 0.2rem solid var(--color-accent);
+    /* border-top: 0.2rem solid var(--color-accent); */
     display: flex;
     align-items: center;
     justify-content: center;
     position: sticky;
     bottom: 0;
+    box-shadow: 3px 3px 5px 5px #555;
 }
 
 /*
@@ -335,15 +407,17 @@ input[type=text], input[type=email], textarea {
 }
   
 input[type=submit] {
-    background-color: #04AA6D;
-    color: white;
+    /* background-color: #04AA6D; */
+    background-color: var(--color-accent);
+    color: var(--color-txt2);
     border: none;
     border-radius: 0.4rem;
     cursor: pointer;
 }
   
 input[type=submit]:hover {
-    background-color: #45a049;
+    /* background-color: #45a049; */
+    background-color: var(--color-primary);
 }
   
 .form-wrap {
