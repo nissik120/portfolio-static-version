@@ -325,18 +325,21 @@ blockquote p {
 
 
 .body::-webkit-scrollbar {
-    width: 6px;          
+    width: 8px;          
 }
   
 .body::-webkit-scrollbar-track {
+    /* background: var(--color-primary); */
     background: var(--color-txt1);
-    width: 3px;
+    /* width: 3px; */
 }
   
 .body::-webkit-scrollbar-thumb {
-    background-color: var(--color-primary);
+/*     background-color: var(--color-primary);
     border-radius: 0 0 10px 10px;
-    border: 3px solid var(--color-primary);
+    border: 3px solid var(--color-primary); */
+    background-color: var(--color-primary);
+    box-shadow: 0 -100vh 0 100vh var(--color-primary), 0 0 15px 5px black;
 }
 
 /*
