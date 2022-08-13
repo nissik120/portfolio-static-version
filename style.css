@@ -46,24 +46,28 @@ h1{
 }
 
 h2{
-    font-size: clamp(1.6rem, 3vw, 2rem);
+    font-size: clamp(1.6rem, 4vw, 2rem);
     color: var(--color-accent);
     padding-bottom: 2rem;    
 }
 
 h3{
-    font-size: clamp(1.4rem, 3vw, 1.8rem);
+    font-size: clamp(1.4rem, 4vw, 1.8rem);
     color: var(--color-accent);
     padding-bottom: 2rem;
 }
 
 h4, i{
-    font-size: clamp(1.2rem, 3vw, 1.6rem);
+    font-size: clamp(1.2rem, 4vw, 1.6rem);
     font-family: var(--ft-sub);
 }
 
 p{
-    font-size: clamp(1.2rem, 3vw, 1.6rem);
+    font-size: clamp(1.2rem, 4vw, 1.6rem);
+}
+
+span, span a{
+    font-size: clamp(1.2rem, 4vw, 1.4rem);
 }
 
 /*
@@ -79,7 +83,7 @@ p{
 }
 
 .navlink a{
-    font-size: clamp(1.2rem, 3vw, 1.6rem);
+    font-size: clamp(1.2rem, 4vw, 1.6rem);
     line-height: 6rem;
 }
 
@@ -150,7 +154,7 @@ CONTENT
 }
 
 #root .tag{
-    font-size: clamp(1.2rem, 2vw, 1.6rem);
+    font-size: clamp(1.2rem, 4vw, 1.6rem);
     overflow: hidden; /* Ensures the content is not revealed until the animation */
     border-right: .15em solid var(--color-primary); /* The typwriter cursor */
     white-space: wrap; /* Keeps the content on a single line */
@@ -182,7 +186,7 @@ CONTENT
 
 blockquote {
     font-style: italic;
-    font-size: clamp(1rem, 2vw, 1.2rem);
+    font-size: clamp(1rem, 4vw, 1.2rem);
     margin: 1.5em 10px;
     padding: 0.5em 10px;
     quotes: "\201C""\201D""\2018""\2019";
@@ -315,7 +319,7 @@ form{
 }
 
 form label{
-    font-size: clamp(1.2rem, 2vw, 1.4rem);
+    font-size: clamp(1.2rem, 4vw, 1.4rem);
 }
 
 input[type=text], input[type=email], textarea {
@@ -327,7 +331,7 @@ input[type=text], input[type=email], textarea {
     margin-top: 0.6rem;
     margin-bottom: 1.6rem;
     resize: vertical;
-    font-size: clamp(1.2rem, 2vw, 1.4rem);
+    font-size: clamp(1.2rem, 4vw, 1.4rem);
 }
   
 input[type=submit] {
