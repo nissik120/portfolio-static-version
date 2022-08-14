@@ -371,11 +371,15 @@ blockquote p {
 }
 
 .pad-vert-sm{
-    padding-block: 1rem;
+    padding-block: 1.5rem;
 }
 
 .pad-horz{
     padding-inline: 3rem;
+}
+
+.pad-horz-sm{
+    padding-inline: 1.5rem;
 }
 
 
@@ -403,12 +407,12 @@ blockquote p {
 
 .project-card{
     border: 2px solid var(--color-txt1);
-    width: 100%;
+    width: 90%;
 }
 
 .pj-img{
-    width: auto;
-    height: 24rem;
+    width: 80%;
+    min-height: 50%;
 }
 
 
