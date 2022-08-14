@@ -1,15 +1,15 @@
 @import url(http://fonts.googleapis.com/css?family=Roboto:400,100,100italic,300,300ita‌​lic,400italic,500,500italic,700,700italic,900italic,900);
-@import url(http://fonts.googleapis.com/css?family=Roboto+Mono:400,100,100italic,300,300ita‌​lic,400italic,500,500italic,700,700italic,900italic,900);
+@import url(//fonts.googleapis.com/css?family=Roboto+Mono:400,100,100italic,300,300ita‌​lic,400italic,500,500italic,700,700italic,900italic,900);
 
 :root{
 
     --ft-main: Roboto Mono;
     --ft-sub: Roboto;
-    --color-background: #212922;
-    --color-primary: #E54B4B;
+    --color-background: #313638;
+    --color-primary: #F09D51;
     --color-accent: #44BBA4;
-    --color-txt1: #F3F9D2;
-    --color-txt2: #F3F9D2;
+    --color-txt1: #E8E9EB;
+    --color-txt2: #E0DFD5;
 
 }
 
@@ -18,11 +18,11 @@
 
         --ft-main: Roboto Mono;
         --ft-sub: Roboto;
-        --color-background: #F3F9D2;
-        --color-primary: #E54B4B;
+        --color-background: #E8E9EB;
+        --color-primary: #F09D51;
         --color-accent: #44BBA4;
-        --color-txt1: #212922;
-        --color-txt2: #212922;
+        --color-txt1: #313638;
+        --color-txt2: #313638;
     
     }
 }
@@ -379,6 +379,16 @@ blockquote p {
     border-left: 0.3rem solid var(--color-primary);
     padding-left: 2em;
     margin-bottom: 2em;
+}
+
+/*
+    
+    WORK PAGE STYLING
+
+*/
+.project-grid .card{
+    border: 2px solid var(--color-txt1);
+    background: url("./img/projects/afdd.jpg") no-repeat;
 }
 
 
