@@ -407,7 +407,7 @@ blockquote p {
 }
 
 .pj-img{
-    width: 90%;
+    width: auto;
     height: 24rem;
 }
 
