@@ -29,6 +29,18 @@
 
 }
 
+/* :root{
+
+    --ft-main: Roboto Mono;
+    --ft-sub: Roboto;
+    --color-background: #313638;
+    --color-primary: #F09D51;
+    --color-accent: #00A896;
+    --color-txt1: #E8E9EB;
+    --color-txt2: #E0DFD5;
+
+} */
+
 
 /* :root{
 
@@ -368,6 +380,11 @@ blockquote p {
     align-items: center;
 }
 
+.grid-center{
+    justify-items: center;
+    align-items: center;
+}
+
 .pad-vert{
     padding-block: 3rem;
 }
@@ -403,7 +420,7 @@ blockquote p {
 */
 .project-grid{
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
     gap: 10px;
 }
 
@@ -413,7 +430,7 @@ blockquote p {
 }
 
 .pj-img{
-    width: 80%;
+    width: 95%;
     min-height: 50%;
 }
 
