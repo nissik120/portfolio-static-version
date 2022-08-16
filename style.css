@@ -198,6 +198,12 @@ FOOTER
     box-shadow: 3px 3px 5px 5px #555;
 }
 
+.footer a{
+    /* border-bottom: 0.1rem solid var(--color-primary); */
+    color: var(--color-accent);
+    padding-bottom: 0.2rem;
+}
+
 /*
 CONTENT
 */
