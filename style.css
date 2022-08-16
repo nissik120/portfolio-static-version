@@ -411,6 +411,13 @@ blockquote p {
     ABOUT PAGE STYLING
 
 */
+.xpwrap{
+    grid-template-columns: repeat(auto-fill, min(60rem, 90%));
+    column-gap: 4rem;
+    row-gap: 3rem;
+}
+
+
 .xpitem{
     border-left: 0.3rem solid var(--color-primary);
     padding-left: 2em;
@@ -424,8 +431,8 @@ blockquote p {
 */
 .project-grid{
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-    gap: 10px;
+    grid-template-columns: repeat(auto-fill, minmax(24rem, 60rem));
+    gap: 1rem;
 }
 
 .project-card{
