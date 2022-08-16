@@ -5,6 +5,7 @@
 
     --ft-main: Roboto Mono;
     --ft-sub: Roboto;
+    --ft-sign: Brush Script MT, Brush Script Std, cursive;
     --color-background: #313638;
     --color-primary: #F09D51;
     --color-accent: #44BBA4;
@@ -247,8 +248,11 @@ CONTENT
     margin: 0 auto; /* Gives that scrolling effect as the typing happens */
     letter-spacing: .10em; /* Adjust as needed */
     animation: 
-      typing 3.5s steps(10, end),
+      typing 3.5s steps(30, end),
       blink-caret .75s step-end infinite;
+/*     animation: 
+      typing 4s steps(44) 1s 1 normal both,
+      blink-caret 500ms steps(44) infinite normal; */
 }
 
 /* The typing effect */
@@ -491,5 +495,46 @@ input[type=submit]:hover {
 }
 
 .cpico:hover{
+    color: var(--color-primary);
+}
+
+
+/*
+    NVISION MODAL PAGE
+*/
+
+#nvmodal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0.95;
+}
+
+.nvmodal-win {
+  position: relative;
+}
+
+.nvmodal-close {
+  position: absolute;
+  top: 10px;
+  left: 20px;
+  font-size: 4rem;
+}
+
+#nvmodal:not(:target) {
+    visibility: hidden;
+    opacity: 0;
+}
+
+.signature{
+    font-family: var(--ft-sign);
+}
+
+#nvmodal p{
     color: var(--color-primary);
 }
