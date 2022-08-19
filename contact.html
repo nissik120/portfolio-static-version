@@ -24,15 +24,18 @@
 
                 <div class="form-wrap column flex-center">
                     <h3>Simplify the load. Write Your Message Below!!</h3>
-                    <form class="column" method="post" action="">
+                    <form id="contact-form" class="column" method="post" onsubmit="validateForm(event)">
 
                         <label for="username">Your Name</label>
+                        <p id="nameErr" class="errtxt"></p>
                         <input type="text" name="username" id="username" placeholder="e.g. John Doe">
 
                         <label for="mailaddr">Your Email</label>
+                        <p id="emailErr" class="errtxt"></p>
                         <input type="email" name="mailaddr" id="mailaddr" placeholder="user@email.com">
 
                         <label for="subject">Subject</label>
+                        <p id="subjErr" class="errtxt"></p>
                         <input type="text" name="subject" id="subject" placeholder="Your main topic here...">
 
                         <label for="mailbody">Your Message</label>
@@ -87,5 +90,6 @@
 
 
     </main>
+    <script src="./js/contactpage.js"></script>
 </body>
 </html>

@@ -11,6 +11,7 @@
     --color-accent: #44BBA4;
     --color-txt1: #E8E9EB;
     --color-txt2: #E0DFD5;
+    --color-err: #FF6978;
 
 }
 
@@ -25,6 +26,7 @@
         --color-accent: #44BBA4;
         --color-txt1: #313638;
         --color-txt2: #313638;
+        --color-err: #FF6978;
     
     }
 
@@ -108,7 +110,13 @@
     background: var(--color-background);
     color: var(--color-txt1);
     box-sizing: border-box;
-} ens192
+}
+
+html{
+    -moz-text-size-adjust: none;
+    -webkit-text-size-adjust: none;
+    text-size-adjust: none;
+}
 
 html, body{
     height: 100%;
@@ -116,6 +124,7 @@ html, body{
 
 body{
     overflow: hidden;
+    font-size: clamp(1.6rem, 4vw, 2rem);
 }
 
 main{
@@ -132,28 +141,34 @@ h1{
 }
 
 h2{
-    font-size: clamp(1.6rem, 4vw, 2rem);
+    /* font-size: clamp(1.6rem, 4vw, 2rem); */
+    font-size: clamp(2.2rem, 4vw, 2.6rem);
     color: var(--color-accent);
     padding-bottom: 2rem;    
 }
 
 h3{
-    font-size: clamp(1.4rem, 4vw, 1.8rem);
+    /* font-size: clamp(1.4rem, 4vw, 1.8rem); */
+    font-size: clamp(1.6rem, 2vw, 2rem);
     color: var(--color-txt1);
     padding-bottom: 2rem;
 }
 
 h4, i{
-    font-size: clamp(1.2rem, 4vw, 1.6rem);
+    /* font-size: clamp(1.2rem, 4vw, 1.6rem); */
+    font-size: clamp(1.6rem, 2vw, 1.8rem);
     font-family: var(--ft-sub);
 }
 
 p{
-    font-size: clamp(1.2rem, 4vw, 1.6rem);
+    /* font-size: clamp(1.2rem, 4vw, 1.6rem); */
+    font-size: clamp(1.6rem, 2vw, 1.8rem);
+    line-height: 1.5;
 }
 
 span, span a{
-    font-size: clamp(1.2rem, 4vw, 1.4rem);
+    /* font-size: clamp(1.2rem, 4vw, 1.4rem); */
+    font-size: 1.6rem;
 }
 
 /*
@@ -226,7 +241,7 @@ CONTENT
 
 .primary-btn{
     padding: 1em 2.2em;
-    font-size: clamp(1.2rem, 2vw, 1.6rem);
+    font-size: clamp(1.6rem, 2vw, 1.8rem);
 }
 
 .primary-btn:hover{
@@ -282,7 +297,7 @@ CONTENT
 
 blockquote {
     font-style: italic;
-    font-size: clamp(1rem, 4vw, 1.2rem);
+    font-size: clamp(1.6rem, 4vw, 2rem);
     margin: 1.5em 10px;
     padding: 0.5em 10px;
     quotes: "\201C""\201D""\2018""\2019";
@@ -466,7 +481,7 @@ form{
 }
 
 form label{
-    font-size: clamp(1.2rem, 4vw, 1.4rem);
+    font-size: clamp(1.6rem, 4vw, 2rem);
 }
 
 input[type=text], input[type=email], textarea {
@@ -511,6 +526,10 @@ input[type=submit]:hover {
 
 .cpico:hover{
     color: var(--color-primary);
+}
+
+.errtxt{
+    color: var(--color-err);
 }
 
 
