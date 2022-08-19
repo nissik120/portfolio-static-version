@@ -132,7 +132,7 @@ main{
     width: 100vw;
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 8rem 1fr 5rem;
+    grid-template-rows: 8rem 1fr 8rem;
 }
 
 h1{
@@ -205,12 +205,22 @@ FOOTER
 */
 .footer{
     /* border-top: 0.2rem solid var(--color-accent); */
-    display: flex;
-    align-items: center;
-    justify-content: center;
     position: sticky;
     bottom: 0;
     box-shadow: 3px 3px 5px 5px #555;
+}
+
+.ftwrap{
+    width: 90%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.ftwrap span{
+    display: inline-block;
+    text-align: center;
 }
 
 .footer a{
