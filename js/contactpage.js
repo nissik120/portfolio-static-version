@@ -8,7 +8,7 @@ function validateForm(e) {
 
     e.preventDefault();
 
-    var URL = "https://0qk2p5yfb0.execute-api.eu-central-1.amazonaws.com/";
+    var URL = "https://juzkz5py88.execute-api.eu-central-1.amazonaws.com/default/sendContactMessage";
 
     // Retrieving the values of form elements 
     var name = document.getElementById("username").value;
@@ -54,21 +54,21 @@ function validateForm(e) {
     
     // Prevent the form from being submitted if there are any errors
     if((nameErr || emailErr || subjErr) == true) {
-    return false;
+        return false;
     } else {
-        var data = {
+        var data = JSON.stringify({
             name : name,
             email : email,
+            subject: subject,
             desc : desc
-        };
+        });
 
         //subject: subject,
         //console.log(data);
 
-/*         var xmlhttp = new XMLHttpRequest();
+        var xmlhttp = new XMLHttpRequest();
         xmlhttp.open("POST", URL);
         xmlhttp.setRequestHeader("Content-Type", "application/json");
-        xmlhttp.send(JSON.stringify(data));
         xmlhttp.onreadystatechange = function() {
             if (xmlhttp.readyState === 4) {
                 var response = JSON.parse(xmlhttp.responseText);
@@ -79,7 +79,8 @@ function validateForm(e) {
                     console.log('failed');
                 }
             }
-        } */
+        }
+        xmlhttp.send(data);
         document.getElementById('contact-form').reset();
     }
 };
