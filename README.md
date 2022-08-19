@@ -12,6 +12,7 @@ In the initial planning phase of this project the following goals were set:
 * Document the journey, highlight all the key points.
 
 # Technologies
-> Teamwork makes the dream work. 
+Teamwork makes the dream work.
+
 The following tools contributed to the realization of the website as seen.
 [![My Skills](https://skillicons.dev/icons?i=js,html,css,aws)]
