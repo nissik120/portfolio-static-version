@@ -68,10 +68,10 @@ function validateForm(e) {
 
         var xmlhttp = new XMLHttpRequest();
         xmlhttp.open("POST", URL);
-        xmlhttp.setRequestHeader("Content-Type", "application/json");
+        xmlhttp.setRequestHeader("Content-Type", "text/plain");
         xmlhttp.onreadystatechange = function() {
             if (xmlhttp.readyState === 4) {
-                //var response = JSON.parse(xmlhttp.responseText);
+                var response = JSON.parse(xmlhttp.responseText);
                 if (xmlhttp.status === 200 ) {
                     console.log('successful');
                     document.getElementById("contact-form").innerHTML = "<h3>Thank you for your message/feedback<br>our team will get back to you soon!</h3>";
